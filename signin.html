@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+body
+{
+background-image:url("2BDXYhN.jpg");
+background-size:cover;
+font-size:18px;
+font-family:sans-serif;
+font-weight:500;
+background-position:fixed;
+}
+h1
+{   color:red;
+	text-align:left;
+     /*text-shadow:10px 40px 5px black;*/
+     padding-bottom:10px;
+     animation: mymove 5s infinite;
+     
+}
+@keyframes mymove {
+  50% {text-shadow: 10px 30px 30px blue;}
+}
+ 
+.signin
+{
+/*position:relative;*/
+padding-top:1px
+margin:5% auto;
+width:300px;
+height:650px;
+background: #fff;
+box-shadow:10px 10px 10px black;	
+}
+.form1
+{	
+position:absolute;
+box-sizing:border-box;
+padding-top:1px;
+padding-left:40px;
+width:250px;
+height:500px;
+}
+input[type="text"],input[type="password"],input[type="email"]
+{   display:block;
+	box-sizing:border-box;
+	margin-bottom:20px;
+	height:30px;
+	width:230px;
+    border:0px;
+    font-size:20px;
+	border-bottom:1px solid;
+}
+input[type="submit"]
+{
+	margin-bottom:28px;
+	width:120px;
+	height:32px;
+	background:red;
+	border:none;
+	border-radius:10px;
+	font-family:bookman;
+	text-transform:uppercase;
+	font-size:15px;
+	color:white;
+	transition:5s ease;
+	cursor:pointer;
+	box-shadow: 0px 5px  blue;
+}
+input[type="submit"]:active
+{
+ box-shadow: 0 1px blue;
+ transform: translateY(4px);	
+}
+input[type="submit"]:hover {background:green;
+	}
+
+
+.form2
+{
+	position:absolute;
+	border: 2px;
+	background:white;
+	
+	margin-bottom:20px: 
+	
+      
+}
+.social
+{ 
+	font-size:20px;
+	text-shadow:0px 5px 5px black;
+}
+button.button
+{
+	height:30px;
+	width: 200px;
+	border:none;
+	border-radius:4px;
+	cursor:pointer;
+	transition: 0.2s ease;
+	margin-top:10px;
+    color:white;
+}
+button.facebook
+{
+
+	background:blue;
+
+}
+button.google
+{
+	
+	background:red;
+}
+button.twitter
+{
+	
+	background:#31c0f9;
+
+}
+
+</style>	
+	<title>signin</title>
+</head>
+<body>
+<center>
+<div class="signin">
+
+<div class="form1">
+	<form method="get" action="one.php">
+	<h1><u>Sign up</u></h1>
+	<input type="text" name="name" placeholder="Enter Name">
+	<input type="email" name="email" placeholder="Enter Email">
+	
+	<input type="password" name="password" placeholder="Enter Password">
+	
+	<input type="password" name="confirm password" placeholder="Enter Password again">
+	<input type="text" name="mobile no" placeholder="Enter Mobile no"><br>
+	<input type="radio" name="gender" value="male" checked>MALE
+	<input type="radio" name="gender" value="female" checked>FEMALE<br>
+	<input type="radio" name="gender" value="other" checked>OTHER<br>
+	<input type="submit" value="confirm">
+	</form>
+<div class="form2">
+	<form>
+		<u><span class="social">Sign in with<br> social network</span></u><br>
+		<button class="button facebook">FACEBOOK</button>
+		<button class="button google">GOOGLE</button>
+		<button class="button twitter">TWITTER</button>
+	</form>
+</div>
+</div>
+</div></center>
+
+</body>
+</html>
